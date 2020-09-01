@@ -1,0 +1,11 @@
+<view class="container">
+    <view class="assess-top">
+      <view class="assess-top-all">全部</view>
+      <view class="assess-top-hot">最热门 1000+</view>
+      <view class="assess-top-pic">有图 5900+</view>
+      <view class="assess-top-num">98%</view>
+      <view class="assess-top-num-txt">好评</view>
+    </view>
+  
+
+</view>

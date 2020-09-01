@@ -1,0 +1,54 @@
+<view class="container">
+  <view class="adder-add">
+    <van-cell-group>
+  <van-field
+    label="收货人"
+    value="{{ value }}"
+    placeholder="请输入收货人名称"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+  label="手机号码"
+    value="{{ value }}"
+    placeholder="收货人电话"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+
+<van-cell-group>
+  <van-field
+  label="所在地区"
+    value="{{ value }}"
+    placeholder="请选择省份/诚实/地区/街道"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+  label="详细地址"
+    value="{{ value }}"
+    placeholder="请输入小区/门牌号/楼层"
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+</van-cell-group>
+
+<view class="address-moren-box">
+  <view class="address-moren">设置为默认地址</view>
+  <view  class="address-moren-meun">
+  <van-switch size="40rpx" active-color="red" checked="{{ checked }}" bind:change="onChange" />
+  </view>
+</view>
+
+<view class="baocun-mune">
+<van-button type="primary" color="red" round="true" size="large">保存地址</van-button>
+</view>
+  </view>
+
+
+</view>

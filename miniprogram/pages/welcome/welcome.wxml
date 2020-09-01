@@ -1,0 +1,274 @@
+<!--pages/welcome/welcome.wxml-->
+<!-- https://documenter.getpostman.com/view/9107119/T1DqgGaC -->
+<view class="container">
+   <van-search
+   class="wel-search"
+  value="{{ value }}"
+  shape="round"
+  background="#7232dd"
+  placeholder="请输入搜索关键词"
+/>
+<!-- 轮播图 -->
+<view class="swiper"> 
+     <swiper
+      class="lunbo"
+     autoplay="true"
+     interval="2500"
+     indicator-dots="true"
+     indicator-active-color="#ffffff" 
+     circular="true"
+     bindtap="onSwiper"
+     >
+     <swiper-item>
+      <image class="lunbo-pic"  src="../../images/schoolone.png"></image>
+     </swiper-item>
+       <swiper-item>
+      <image class="lunbo-pic"  src="../../images/schooltwo.png"></image>
+     </swiper-item>
+       <swiper-item>
+      <image class="lunbo-pic" src="../../images/schoolthree.png"></image>
+     </swiper-item>
+     </swiper>
+   
+</view>
+
+
+<!-- 认证文字 -->
+<view class="yes-box">
+    <image class="yes-pic" src="../../images/yespic.png"></image>
+    <view class="yes-pic-txt">官方商城</view>
+    <image class="yes-pic-two" src="../../images/yespic.png"></image>
+    <view class="yes-pic-txt-two">正品保障</view>
+    <image class="yes-pic-three" src="../../images/yespic.png"></image>
+    <view class="yes-pic-txt-three">售后无忧</view>
+</view>
+
+<!-- 专区模块 -->
+<view class="app-model">
+<view>
+
+<view class="menu2">
+
+      <view class="menu2_view" wx:for="{{arry}}" wx:key="arry" wx:for-index="idx" bindtap="btnanniu">   
+
+             <image src="{{item.src}}" mode="widthFix" class="menu3icon" id="{{idx}}"></image>
+            
+             <text class="menu2-text">{{item.text}}</text>       
+     </view>
+     <text class="menu2-text-two">拼团</text>
+
+</view>
+</view>
+</view>
+<!-- 专区模块结束 -->
+
+<!-- 热品新品商品信息开始 -->
+<view class="shop-box">
+<view class="menu3">
+
+      <view class="menu3_view" wx:for="{{array}}" wx:key="array" wx:for-index="idx" bindtap="hotList">
+             <text class="menu3-text">{{item.good_name}}</text>
+             <text class="menu3-text-two">{{item.good_detail}}</text>
+             <text class="menu3-text-three">￥{{item.good_price}}</text>
+             <van-tag plain type="danger">hot</van-tag>
+             <image src="{{item.good_img}}" mode="widthFix" class="menu4icon" id="{{idx}}"></image>    
+     </view>
+</view>  
+</view>
+
+<!-- 特价三款手机 -->
+<view class="special-phone">
+   <view class="menu4_view" wx:for="{{hotarray}}" wx:key="hotarray" wx:for-index="idx">
+      <image src="{{item.src}}" mode="widthFix" class="menu4icon" id="{{idx}}"></image>
+             <text class="menu4-text">{{item.name}}</text> 
+             <text class="menu4-text-two">{{item.text}}</text>
+             <text class="menu4-text-three">{{item.price}}</text>
+   </view>
+</view>
+
+<!-- 精品推荐 -->
+
+<view class="scroll_box"> 
+<view class="recommendation">精品推荐</view>
+    <scroll-view scroll-x>
+    <!-- <view class="recommendation">精品推荐</view> -->
+ 
+      <view class="item_list" wx:for="{{recarray}}" wx:key="recarray" wx:for-index="idx">
+        <image class="item_list_pic" src="{{item.src}}" id="{{idx}}"></image>
+        <view class="item-bottom">{{item.text}}</view>
+        <view class="item-bottom-two">
+        <view class="item-bottom-name">{{item.name}}</view>
+        <view class="item-bottom-price">￥{{item.price}}</view>
+        </view>
+      
+      </view>  
+    </scroll-view>
+</view>
+
+
+<!-- 手机栏目 -->
+<view class="phone-item">
+  <view class="phone-item-box">
+  手机
+  </view>
+
+  <view class="phone-item-box-tab">
+  <view class="phone-item-box-tab-list" wx:for="{{phonearray}}" wx:key="phonearray" wx:for-index="idx">
+       <image class="phone-item-pic" src="{{item.good_img}}"></image>
+       <view class="phone-item-tab-name">{{item.good_name}}</view>
+       <view class="phone-item-tab-price">￥{{item.good_price}}</view>
+  </view>
+
+  <view class="scroll_box"> 
+    <scroll-view scroll-x>
+      <view class="item_list" wx:for="{{recarray}}" wx:key="recarray" wx:for-index="idx">
+        <image class="item_list_pic" src="{{item.src}}" id="{{idx}}"></image>
+        <view class="item-bottom">{{item.text}}</view>
+        <view class="item-bottom-two">
+        <view class="item-bottom-name">{{item.name}}</view>
+        <view class="item-bottom-price">￥{{item.price}}</view>
+        </view>
+      </view>  
+    </scroll-view>
+</view>
+  </view>
+</view>
+
+
+<view class="com-item">
+  <view class="com-item-box">
+  笔记本电脑
+  </view>
+
+  <view class="com-item-box-tab">
+  <view class="com-item-box-tab-list" wx:for="{{comarray}}" wx:key="comarray" wx:for-index="idx">
+       <image class="com-item-pic" src="{{item.good_img}}"></image>
+       <view class="com-item-tab-name">{{item.good_name}}</view>
+       <view class="com-item-tab-price">￥{{item.good_price}}</view>
+  </view>
+
+  <view class="scroll_box"> 
+    <scroll-view scroll-x>
+      <view class="item_list" wx:for="{{recarray}}" wx:key="recarray" wx:for-index="idx">
+        <image class="item_list_pic" src="{{item.src}}" id="{{idx}}"></image>
+        <view class="item-bottom">{{item.text}}</view>
+        <view class="item-bottom-two">
+        <view class="item-bottom-name">{{item.name}}</view>
+        <view class="item-bottom-price">￥{{item.price}}</view>
+        </view>
+      </view>  
+    </scroll-view>
+</view>
+  </view>
+</view>
+
+
+
+<view class="pad-item">
+  <view class="pad-item-box">
+  精品平板
+  </view>
+
+  <view class="pad-item-box-tab">
+  <view class="pad-item-box-tab-list" wx:for="{{padarray}}" wx:key="padarray" wx:for-index="idx">
+       <image class="pad-item-pic" src="{{item.good_img}}"></image>
+       <view class="pad-item-tab-name">{{item.good_name}}</view>
+       <view class="pad-item-tab-price">￥{{item.good_price}}</view>
+  </view>
+
+  <view class="scroll_box"> 
+    <scroll-view scroll-x>
+      <view class="item_list" wx:for="{{recarray}}" wx:key="recarray" wx:for-index="idx">
+        <image class="item_list_pic" src="{{item.src}}" id="{{idx}}"></image>
+        <view class="item-bottom">{{item.text}}</view>
+        <view class="item-bottom-two">
+        <view class="item-bottom-name">{{item.name}}</view>
+        <view class="item-bottom-price">￥{{item.price}}</view>
+        </view>
+      </view>  
+    </scroll-view>
+</view>
+  </view>
+</view>
+
+<!-- 手机栏目 -->
+<view class="chuan-item">
+  <view class="chuan-item-box">
+  智能穿戴
+  </view>
+
+  <view class="chuan-item-box-tab">
+  <view class="chuan-item-box-tab-list" wx:for="{{watcharray}}" wx:key="watcharray" wx:for-index="idx">
+       <image class="chuan-item-pic" src="{{item.good_img}}"></image>
+       <view class="chuan-item-tab-name">{{item.good_name}}</view>
+       <view class="chuan-item-tab-price">￥{{item.good_price}}</view>
+  </view>
+
+  <view class="scroll_box"> 
+    <scroll-view scroll-x>
+      <view class="item_list" wx:for="{{recarray}}" wx:key="recarray" wx:for-index="idx">
+        <image class="item_list_pic" src="{{item.src}}" id="{{idx}}"></image>
+        <view class="item-bottom">{{item.text}}</view>
+        <view class="item-bottom-two">
+        <view class="item-bottom-name">{{item.name}}</view>
+        <view class="item-bottom-price">￥{{item.price}}</view>
+        </view>
+      </view>  
+    </scroll-view>
+</view>
+  </view>
+</view>
+
+<view class="welcome-bottom">
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item>
+    <image
+      slot="icon"
+      src="{{ icon.normal }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    <image
+      slot="icon-active"
+      src="{{ icon.active }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    <text class="welcome-bottom-one">首页</text>
+    
+  </van-tabbar-item>
+   <van-tabbar-item bindtap="toClassify" >
+    <image
+      slot="icon"
+      src="{{ aicon.normal }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    <image
+      slot="icon-active"
+      src="{{ aicon.active }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    分类
+  </van-tabbar-item>
+  <van-tabbar-item bindtap="toMe">
+    <image
+      slot="icon"
+      src="{{ bicon.normal }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    <image
+      slot="icon-active"
+      src="{{ bicon.active }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    我的
+  </van-tabbar-item>
+</van-tabbar>
+
+</view>
+</view>
+

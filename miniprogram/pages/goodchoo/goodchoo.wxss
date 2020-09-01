@@ -1,0 +1,576 @@
+/* pages/goodchoo/goodchoo.wxss */
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+  /* background-color: red; */
+  /* overflow: hidden; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.header-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 60rpx;
+  /* background-color: sienna; */
+  background-color: white;
+  text-align: center;
+  margin-top: -200rpx;
+  z-index: 1;
+  /* letter-spacing:15px; */
+  /* clear: both; */
+}
+.header-nav text {
+  margin: 20rpx;
+  display: line-block;
+}
+
+.on {
+  font-size: 28rpx;
+  /* margin: 10rpx; */
+  display: line-block;
+  /* border: 5rpx solid red; */
+  color: red;
+  border-bottom: 4rpx solid red; 
+}
+
+.up {
+  font-size: 28rpx;
+  color: rgb(16, 14, 14);
+}
+
+.header-nav-pic {
+  width: 38rpx;
+  height: 38rpx;
+  display: line-block;
+  /* margin-right: -100rpx; */
+
+}
+
+.header-nav-fenx {
+  width: 38rpx;
+  height: 38rpx;
+}
+
+.header-nav-fenx-pic {
+  display: block;
+  width: 38rpx;
+  height: 38rpx;
+  margin-left: 670rpx;
+  margin-top: -37rpx;
+}
+
+.swiper {
+  width: 100%;
+  height: 850rpx;
+  margin-top: -90rpx;
+  position: relative;
+}
+.lunbo {
+  height: 550rpx;
+  background-color: rgb(250, 250, 250);
+}
+.lunbo-pic {
+  width: 500rpx;
+  height: 500rpx;
+  /* display: inline; */
+  text-align: center;
+  margin-left: 120rpx;
+}
+
+.lunbo-idex {
+  width: 60rpx;
+  height: 35rpx;
+  color: white;
+  background-color: #ccc;
+  border-radius: 20rpx;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 35rpx;
+  margin-left: 650rpx;
+  margin-top: 500rpx;
+}
+.good-message {
+  width: 100%;
+  height: 100%;
+  margin-top: -180rpx;
+  /* margin-left: 50rpx; */
+}
+.good-message-txt {
+  margin-left: 40rpx;
+  position: relative;
+}
+.good-price {
+  display: block;
+  color: red;
+  font-weight: 800;
+}
+.good-peizhi {
+  display: block;
+  font-size: 25rpx;
+  font-weight: 800;
+}
+
+.good-peizhi-select {
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+  /* float: right; */
+  margin-left: 580rpx;
+  margin-top: -30rpx;
+}
+
+.good-show {
+  position: absolute;
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+  top: 50rpx;
+  left: 640rpx;
+
+}
+.good-show-txt {
+  font-size: 22rpx;
+  float: right;
+  color: red;
+  position: absolute;
+  top: 100rpx;
+  left: 630rpx;
+}
+
+.change {
+  display: block;
+  font-size: 22rpx;
+  width: 80%;
+text-overflow: -o-ellipsis-lastline;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+color: red;
+}
+
+.changes {
+  display: block;
+  font-size: 22rpx;
+  width: 80%;
+}
+
+.button-view {
+  background-color: red;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.good-bill {
+  width: 95%;
+  height: 90rpx;
+  /* background-color: blueviolet; */
+  margin-left: 36rpx;
+  margin-top: 30rpx;
+  position: relative;
+  border-top: 3rpx solid rgb(223, 218, 218);
+  border-bottom: 3rpx solid rgb(223, 218, 218);
+}
+.good-bill-txt {
+  font-size: 22rpx;
+  line-height: 90rpx;
+  color: rgb(194, 190, 190);
+}
+
+.good-bill-pic {
+  display: block;
+  width: 170rpx;
+  height: 40rpx;
+  /* float: left; */
+  margin-left: 100rpx;
+  margin-top: -65rpx;
+}
+
+.good-bill-pic-txt {
+  position: absolute;
+  color: white;
+  font-size: 20rpx;
+  left: 130rpx;
+  top: 35rpx;
+}
+
+.good-urge {
+  width: 95%;
+  height: 180rpx;
+  margin-left: 36rpx;
+ 
+
+}
+.good-urge-txt {
+  font-size: 22rpx;
+  line-height: 90rpx;
+  color: rgb(194, 190, 190);
+  position: absolute;
+  left: 38rpx;
+  top: 1020rpx;
+}
+.good-urge-box {
+width: 60%;
+float: left;
+margin-left: 100rpx;
+/* margin-top: -50rpx; */
+margin-top: 20rpx;
+
+
+}
+
+.good-urge-box-view {
+  display: block;
+  /* width: 130rpx; */
+  height: 30rpx;
+  border: 1rpx solid red;
+  border-radius: 20rpx;
+  font-size: 20rpx;
+  float: left;
+  color: red;
+  padding:4rpx 10rpx 0rpx 10rpx;
+  
+}
+.good-urge-box-txt {
+  display: block;
+  font-size: 22rpx;
+  float: left;
+  /* padding-left: 4rpx; */
+  margin-left: 10rpx;
+
+}
+
+.good-center-box {
+  width: 100%;
+  height: 14rpx;
+  background-color: #ccc;
+}
+
+.good-norms-color {
+  clear: both;
+  margin-top: 20rpx;
+}
+.good-norms-list {
+  width: 90%;
+
+}
+
+.good-norms-color-txt {
+  width: 50rpx;
+  height: 50rpx;
+  font-size: 22rpx;
+  /* line-height: 90rpx; */
+  color: rgb(194, 190, 190);
+  float: left;
+  margin-left: 42rpx;
+  margin-top: 6rpx;
+}
+.good-norms-color-num {
+
+  font-size: 24rpx;
+  float: left;
+  border: 2rpx solid rgb(226, 222, 222);
+  border-radius: 20rpx;
+  padding: 4rpx 8rpx 4rpx 8rpx;
+  margin-left: 50rpx;
+  margin-bottom: 10rpx;
+}
+
+.good-norms-banben {
+  clear: both;
+  margin-top: 20rpx;
+}
+.good-norms-banben-list {
+  width: 60%;
+
+}
+
+.good-norms-banben-txt {
+  width: 50rpx;
+  height: 250rpx;
+  font-size: 22rpx;
+  /* line-height: 90rpx; */
+  color: rgb(194, 190, 190);
+  float: left;
+  margin-left: 42rpx;
+  margin-top: 6rpx;
+}
+.good-norms-banben-num {
+  font-size: 24rpx;
+  float: left;
+  border: 2rpx solid rgb(226, 222, 222);
+  border-radius: 20rpx;
+  padding: 4rpx 8rpx 4rpx 8rpx;
+  margin-left: 50rpx;
+  margin-bottom: 10rpx;
+}
+.good-norms-taocan {
+  float: left;
+  /* margin-top: 20rpx; */
+}
+
+.good-norms-taocan-txt {
+  width: 50rpx;
+  height: 100rpx;
+  font-size: 22rpx;
+  color: rgb(194, 190, 190);
+  float: left;
+  margin-left:-50rpx;
+  margin-top: 6rpx;
+}
+
+.good-norms-taocan-num {
+  font-size: 24rpx;
+  float: left;
+  border: 2rpx solid rgb(226, 222, 222);
+  border-radius: 20rpx;
+  padding: 4rpx 8rpx 4rpx 8rpx;
+  margin-left: 50rpx;
+  margin-bottom: 10rpx;
+}
+
+.good-norms-num-txt {
+  width: 50rpx;
+  height: 100rpx;
+  font-size: 22rpx;
+  color: rgb(194, 190, 190);
+  /* float: left; */
+  margin-left:44rpx;
+  /* margin-top: 00rpx; */
+}
+
+.good-norms-num-num {
+  font-size: 24rpx;
+  float: left;
+  border: 2rpx solid rgb(226, 222, 222);
+  border-radius: 20rpx;
+  padding: 4rpx 8rpx 4rpx 8rpx;
+  margin-left: 140rpx;
+  /* margin-bottom: 10rpx; */
+  margin-top: -18rpx;
+}
+
+.good-norms-sheet {
+  margin-top: 300rpx;
+  display: block;
+  width: 100%;
+  height: 80rpx;
+  background-color: red;
+}
+.good-norms-baozhang {
+  border-top: 2rpx solid #ccc;
+  border-bottom: 16rpx solid rgb(235, 230, 230);
+  margin-top: 250rpx;
+  height: 80rpx;
+  width: 100%;
+}
+
+.good-norms-baozhang-txt {
+  width: 50rpx;
+  height:50rpx;
+  font-size: 22rpx;
+  color: rgb(194, 190, 190);
+  /* float: left; */
+  margin-left:44rpx;
+  margin-top: 20rpx;
+}
+.good-norms-baozhang-list {
+  padding: 8rpx 8rpx 8rpx 8rpx;
+  margin-left: 200rpx;
+  margin-top: -66rpx;
+}
+
+.good-norms-baozhang-num {
+  font-size: 22rpx;
+  margin-top: -50rpx;
+  float: left;
+  margin-left: 150rpx;
+}
+.good-norms-baozhang-nums {
+  display: inline-block;
+  border: 2rpx solid rgb(221, 216, 216);
+  padding: 4rpx 4rpx 4rpx 4rpx;
+  font-size: 22rpx;
+/* float: left; */
+margin-left: 8rpx;
+border-radius: 8rpx;
+}
+.good-norms-tuijian {
+  height: 100%;
+  /* background-color: red; */
+  width: 100%;
+
+  border-bottom: 12rpx solid rgb(235, 230, 230);
+}
+.good-norms-tuijian-list {
+  margin-top: -70rpx;
+  margin-bottom: 20rpx;
+}
+
+.good-norms-tuijian-txt {
+  width: 50rpx;
+  height:50rpx;
+  font-size: 22rpx;
+  color: rgb(194, 190, 190);
+  /* float: left; */
+  margin-left:44rpx;
+  margin-top: 20rpx;
+}
+.good-norms-tuijian-num {
+  height: 38rpx;
+  width: 450rpx;
+  font-size: 26rpx;
+  background-color: rgb(235, 233, 233);
+  /* border: 1rpx solid #ccc; */
+  border-radius: 18rpx;
+  margin-left: 150rpx;
+  margin-top: 20rpx;
+  padding: 8rpx 8rpx 8rpx 8rpx;
+
+}
+.good-norms-discuss {
+  width: 100%;
+  height: 300rpx;
+  /* background-color: skyblue; */
+  clear: both;
+  
+}
+.good-norms-discuss-txt {
+  float: left;
+  margin-left: 50rpx;
+  font-size: 24rpx;
+  font-weight: 700;
+  margin-bottom: 50rpx;
+}
+.good-norms-discuss-txtss {
+  float: right;
+  margin-right: 40rpx;
+  font-size: 20rpx;
+}
+.good-norms-discuss-txts {
+  float: right;
+  margin-right: 0rpx;
+  font-size: 20rpx;
+  color: red;
+}
+.between {
+  /* display: inline-block; */
+  width: 100%;
+  /* margin-top: 20rpx;
+  margin-bottom: 60rpx; */
+  white-space: nowrap;
+  overflow-x: scroll;
+   /* overflow: hidden; */
+  -webkit-overflow-scolling:touch;
+}
+.good-norms-discuss-box {
+  width: 82%;
+  height: 280rpx;
+  /* background-color: pink; */
+  border: 4rpx solid black;
+  /* margin-top: 50rpx; */
+  /* float: left; */
+  display: inline-block;
+  margin-left: 30rpx;
+  /* margin-top: 20rpx;
+  margin-bottom: 60rpx; */
+  /* white-space: nowrap; */
+  /* overflow:hidden; */
+  overflow: hidden;
+  /* -webkit-overflow-scolling:touch */
+}
+.good-norms-discuss-pic {
+  float: left;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+.good-norms-discuss-name {
+  font-size: 18rpx;
+  margin-top: 38rpx;
+  margin-left: 10rpx;
+}
+.good-norms-discuss-pingfen {
+  display: block;
+  width: 130rpx;
+  height: 20rpx;
+  margin-top: 10rpx;
+}
+.good-norms-discuss-pinglun {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  font-size: 22rpx;
+  width: 380rpx;
+  white-space: normal;
+  display: block;
+}
+.good-norms-discuss-pingpic {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: tomato;
+  float: right;
+  margin-top: -140rpx;
+  margin-right: 20rpx;
+}
+.good-norms-discuss-pingpic-pic {
+  display: block;
+  width: 200rpx;
+  height: 200rpx;
+}
+.good-norms-all-pinglun {
+  float: left;
+  width: 150rpx;
+  height: 60rpx;
+ border: 4rpx solid #ccc;
+ margin-left: 280rpx;
+  font-size: 22rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 40rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  margin-top: 20rpx;
+}
+.good-bottom-index {
+  width: 100%;
+  height: 100rpx;
+  /* background-color: pink; */
+  margin-top: 30rpx;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.good-bottom-index-home {
+  width: 40rpx;
+  height: 35rpx;    
+  margin-left: 30rpx;
+  margin-top: 15rpx;
+
+}
+
+.good-bottom-index-txt {
+  font-size: 22rpx;
+  color: rgb(143, 138, 138);
+  margin-left: 28rpx;
+}
+.good-bottom-index-buy {
+  float: right;
+  margin-top: -70rpx;
+  margin-right: 25rpx;
+  width: 85%;
+  height: 70rpx;
+  background-color: red;
+  text-align: center;
+  line-height: 60rpx;
+  color:white;
+  border-radius: 30rpx;
+}
+
+
+

@@ -1,0 +1,60 @@
+{
+
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/buylist/buylist",
+    "pages/assess/assess",
+    "pages/order/order",
+    "pages/address/address",
+
+    "pages/addressadd/addressadd",
+    "pages/index/index", 
+    "pages/goodchoo/goodchoo" ,
+    "pages/classify/classify",
+    "pages/me/me",
+    "pages/logs/logs",
+    "pages/login/login"
+  ],
+  "tabBar": {
+    "color":"#00b26a",
+    "selectedColor": "#282c34",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/home.png",
+      "selectedIconPath": "/images/home-a.png"
+  
+    },
+    {
+      "pagePath": "pages/login/login",
+      "text": "登录",
+      "iconPath": "./images/login.png",
+      "selectedIconPath": "/images/login-a.png"
+      
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#7232dd",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-tree-select": "@vant/weapp/tree-select/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-stepper": "@vant/weapp/stepper/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-switch": "@vant/weapp/switch/index"
+  }
+
+}

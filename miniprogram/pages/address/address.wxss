@@ -1,0 +1,92 @@
+/* pages/address/address.wxss */
+.container {
+  background-color: #f4eeee;
+  width: 100%;
+  height: 1200rpx;
+  overflow: hidden;
+}
+.address {
+  margin-top: -200rpx;
+}
+.address-list {
+  float: left;
+  width: 100%;
+  height: 150rpx;
+  background-color: white;
+  clear: both;
+  border-bottom: 2rpx solid #ccc;
+}
+.address-chooss-nuem {
+  width: 38rpx;
+  height: 38rpx;
+  border-radius: 70rpx;
+  background-color: #ff0505;
+  border: 2rpx solid #ccc;
+  margin-top: 56rpx;
+  margin-left: 15rpx;
+  float: left;
+}
+.address-chooss-nuem-yes {
+  width: 28rpx;
+  height: 28rpx;
+  margin-left: 5rpx;
+}
+.address-list-name {
+  font-size: 26rpx;
+  font-weight: 800;
+  float: left;
+  margin-left: 35rpx;
+  margin-top: 18rpx;
+}
+.address-list-tel {
+  font-size: 22rpx;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  /* margin-top: 20rpx; */
+}
+.address-list-txt {
+  width: 400rpx;
+  font-size: 22rpx;
+  float:right;
+  /* margin-top: 80rpx; */
+  /* margin-top: 18rpx; */
+  margin-top: 20rpx;
+  margin-right: 265rpx;
+}
+.address-list-xiugai {
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  margin-right: -650rpx;
+}
+.address-bottom {
+  width: 100%;
+  height: 100rpx;
+  background-color: #ffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.address-bottom-left {
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  border-right: 2rpx solid #ccc;
+
+  
+}
+.address-bottom-right {
+  float: right;
+  margin-right: 70rpx;
+  text-align: center;
+  line-height: 100rpx;
+ 
+}
+.address-bottom-add {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 60rpx;
+  margin-top: 24rpx;
+}

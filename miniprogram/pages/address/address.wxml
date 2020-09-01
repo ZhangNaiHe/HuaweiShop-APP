@@ -1,0 +1,40 @@
+<view class="container">
+
+<view class="address">
+    <view class="address-list">
+    <view class="address-chooss-nuem">
+    <image class="address-chooss-nuem-yes" src="../../images/yes.png"></image>
+    </view>
+       <view class="address-list-name">张乃赫</view>
+       <view class="address-list-tel">19852675739</view>
+       <view class="address-list-txt">吉林 长春 朝阳区 南湖街道 硅谷大街蔚山路交汇华润凯旋门A5 1204</view>
+       <image class="address-list-xiugai" src="../../images/xiugai.png"></image>
+    </view>
+
+        <view class="address-list">
+    <view class="address-chooss-nuem">
+    <image class="address-chooss-nuem-yes" src="../../images/yes.png"></image>
+    </view>
+       <view class="address-list-name">张乃赫</view>
+       <view class="address-list-tel">19852675739</view>
+       <view class="address-list-txt">吉林 长春 朝阳区 南湖街道 硅谷大街蔚山路交汇华润凯旋门A5 1204</view>
+       <image class="address-list-xiugai" src="../../images/xiugai.png"></image>
+    </view>
+
+        <view class="address-list">
+    <view class="address-chooss-nuem">
+    <image class="address-chooss-nuem-yes" src="../../images/yes.png"></image>
+    </view>
+       <view class="address-list-name">张乃赫</view>
+       <view class="address-list-tel">19852675739</view>
+       <view class="address-list-txt">吉林 长春 朝阳区 南湖街道 硅谷大街蔚山路交汇华润凯旋门A5 1204</view>
+      <image class="address-list-xiugai" src="../../images/xiugai.png"></image>
+    </view>
+</view>
+
+<view class="address-bottom">
+  <view class="address-bottom-left">选择微信地址</view>
+  <image class="address-bottom-add" src="../../images/addressadd.png"></image>
+  <view class="address-bottom-right" bindtap="onAddress">新增收货地址</view>
+</view>
+</view>

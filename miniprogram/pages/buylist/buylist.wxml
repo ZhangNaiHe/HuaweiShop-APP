@@ -1,0 +1,97 @@
+<view class="container">
+
+
+  <view class="good-list-address">
+  <text class="good-list-address-add" bindtap="Addaddress">点击添加地址信息</text>
+  <text class="good-list-address-to">></text> 
+  <image class="good-list-address-bottom" src="../../images/addresstiao.png"></image>
+  
+  <view class="el-paper">
+    <view class="el-paper-txt">电子普通发票</view>
+    <view class="el-paper-go">></view>
+     <view class="el-paper-person">个人</view>
+  </view>
+
+  <view class="good-details-list">
+    
+        <image class="good-details-list-logo" src="../../images/huawei-logo.jpg"></image>
+         <view class="good-details-list-title">华为商城</view>
+     
+
+     <view class="good-details-list-good">
+       <image class="good-details-list-pic" src="../../images/iphone.png"></image>
+       <view class="good-details-list-top">
+       <text class="good-details-list-name">HUAWEI P40 5G</text>
+       <text class="good-details-list-model">全网通</text>
+       <text class="good-details-list-neicunic">8GB+128G</text>
+       <text class="good-details-list-color">(深海蓝)</text>
+
+       
+        </view>
+        <view class="good-details-list-small">深海蓝 5G全网通 8GB+128GB 官方标配</view>
+                <view class="good-details-list-price">￥4488</view>
+        <view class="good-details-list-num">x1</view>
+
+
+        <view class="good-give-list">
+         <text class="good-give-list-txt">配</text>
+         <view class="good-give-list-order">
+          <image class="good-give-list-pic" src="../../images/iphone.png"></image>
+         <view class="good-give-list-name">HUAWEI P40 硅胶 保护壳(裸粉)</view>
+         <view class="good-give-list-num">x1</view>
+         </view>
+
+                  <view class="good-give-list-order">
+          <image class="good-give-list-pic" src="../../images/iphone.png"></image>
+         <view class="good-give-list-name">HUAWEI P40 硅胶 保护壳(裸粉)</view>
+         <view class="good-give-list-num">x1</view>
+         </view>
+
+                  <view class="good-give-list-order">
+          <image class="good-give-list-pic" src="../../images/iphone.png"></image>
+         <view class="good-give-list-name">HUAWEI P40 硅胶 保护壳(裸粉)</view>
+         <view class="good-give-list-num">x1</view>
+         </view>
+        </view>
+
+     </view>
+      
+    <view class="good-move">
+     <text class="good-move-send">配送费</text>
+     <view class="good-move-price">￥0.00</view>
+    </view>
+
+<view class="good-price-sum">
+<view class="good-price-left">
+  <view class="good-price-sum-youhui">优惠:</view>
+  <view class="good-price-sum-xiaoji">小计:</view>
+  </view>
+  <view class="good-price-right">
+  <view class="good-price-sum-jian">-￥0.00</view>
+  <view class="good-price-sum-price">￥2999</view>
+  </view>
+</view>
+
+  </view>
+
+
+
+
+  </view>
+
+
+
+
+<view class="good-list-bottom">
+  <view class="good-list-bottom-sum">￥2999</view>
+  <view class="good-list-bottom-pay">
+  <text class="good-list-bottom-txt">微信支付</text>
+  </view>
+</view>
+
+
+
+
+
+</view>
+ 

@@ -1,0 +1,37 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+<view class="img">
+  <van-image
+  class="img-pic"
+  round
+  width="8rem"
+  height="8rem"
+  src="https://img.yzcdn.cn/vant/cat.jpeg"
+/>
+</view>
+<!-- 账号密码框 -->
+<view class="massege-input">
+<van-cell-group>
+  <van-field
+    value="{{ username }}"
+    label="用户名"
+    placeholder="请输入用户名"
+    error
+  />
+  <van-field
+    value="{{ password }}"
+    label="密码"
+    placeholder="请输入密码"
+    error-message="密码格式错误"
+    border="{{ false }}"
+  />
+</van-cell-group>
+</view>
+<view class="go" >
+<image  bindtap="goWelcome" class="go-pic" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594114372263&di=44021e0a27d4255297d0f94d117b8f06&imgtype=0&src=http%3A%2F%2Ffile03.16sucai.com%2F2016%2F10%2F1100%2F16sucai_v20161030020_07b.JPG"></image>
+<image  bindtap="goIndex" class="go-pic-two" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1594115389063&di=fc4a34e40ad8b0eeaa10f5fbe8e3f972&imgtype=0&src=http%3A%2F%2Fimage.tupian114.com%2F20140416%2F14335067.png"></image>
+</view>
+
+
+
+</view>

@@ -1,0 +1,215 @@
+<!--pages/goodchoo/goodchoo.wxml-->
+<view class="container">
+
+
+<view class="header-nav">
+  <text class="{{currentTab==0 ? 'on' : 'up'}}" data-current="0" bindtap="onChoosetxt">商品</text>
+  <text class="{{currentTab==1 ? 'on' : 'up'}}" data-current="1" bindtap="onChoosetxt">评价</text>
+  <text class="{{currentTab==2 ? 'on' : 'up'}}" data-current="2" bindtap="onChoosetxt">参数</text>
+  <text class="{{currentTab==3 ? 'on' : 'up'}}" data-current="3" bindtap="onChoosetxt">详情</text>
+  <view class="header-nav-fenx">
+  <image class="header-nav-fenx-pic" src="../../images/fenxiang.png"></image>
+  </view>
+</view>
+   
+   <!-- 商品图片轮播图 -->
+<view class="swiper"> 
+     <swiper
+      class="lunbo"
+     interval="2500"
+     circular="true">
+     <swiper-item>
+      <image class="lunbo-pic"  src="../../images/iphone.png"></image>
+     </swiper-item>
+       <swiper-item>
+      <image class="lunbo-pic"  src="../../images/schooltwo.png"></image>
+     </swiper-item>
+       <swiper-item>
+      <image class="lunbo-pic" src="../../images/schoolthree.png"></image>
+     </swiper-item>
+     <view class="lunbo-idex">1/7</view>
+     </swiper>
+     
+</view>
+
+<!-- 商品信息价格栏 -->
+<view class="good-message">
+   <view class="good-message-txt">
+      <text class="good-price">￥4188</text>
+      <text class="good-peizhi">HUAIWEI P40 5G 6GB+128GB (零度白)</text>
+      <text class="{{isChecked? 'change':'changes'}}">哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或</text>
+       <image class="good-peizhi-select" src="../../images/select.png" bindtap="onshow"></image>
+       <image class="good-show" src="../../images/goodshow.png"></image>
+       <text class="good-show-txt">分享赚</text>
+       
+   </view>
+
+   <view class="good-bill">
+     <text class="good-bill-txt">领劵</text>
+     <image class="good-bill-pic" src="../../images/daijin.png">
+     </image>
+
+     <text class="good-bill-pic-txt">领劵直减200</text>
+     
+   </view>
+
+   <view class="good-urge">
+     <text class="good-urge-txt">促销</text>
+     <view class="good-urge-box">
+      <text class="good-urge-box-view">一站式换新</text>
+      <text class="good-urge-box-txt">APP专享,最高补贴300元</text>
+     </view>
+       <view class="good-urge-box">
+      <text class="good-urge-box-view">专享赠品</text>
+      <text class="good-urge-box-txt">银行渠道专享赠耳机</text>
+       </view>
+
+     <!-- <text class="good-bill-pic-txt">领劵直减200</text> -->
+     
+   </view>
+   <view class="good-center-box"></view>
+
+   <!-- 商品规格 -->
+    <!-- <view class="good-norms"> -->
+<view class="good-norms">
+    <!-- 商品规格颜色 -->
+    <view class="good-norms-color">
+    <view class="good-norms-color-txt">颜色</view>
+    <view class="good-norms-list">
+    <view class="good-norms-color-num">亮黑色</view>
+    <view class="good-norms-color-num">亮黑色</view>
+    <view class="good-norms-color-num">亮黑色</view>
+    <view class="good-norms-color-num">亮黑色</view>
+    <view class="good-norms-color-num">亮黑色</view>
+    <view class="good-norms-color-num">亮黑色</view>
+    </view>
+    </view>
+    <!-- </view> -->
+    
+
+       <!-- 商品规格版本 -->
+    <view class="good-norms-banben">
+    <view class="good-norms-banben-txt">版本</view>
+    <view class="good-norms-banben-list">
+    <view class="good-norms-banben-num">5G全网通 8GB+128GB</view>
+    <view class="good-norms-banben-num">5G全网通 8GB+128GB</view>
+    <view class="good-norms-banben-num">5G全网通 8GB+128GB</view>
+    </view>
+    </view>
+
+    <view class="good-norms-taocan">
+    <view class="good-norms-taocan-txt">套餐</view>
+    <view class="good-norms-taocan-list">
+      <view class="good-norms-taocan-num">官方标配</view>
+      <view class="good-norms-taocan-num">5G全网通 8GB+128GB</view>
+    </view>
+    </view>
+    </view>
+        
+    <view class="good-norms-num">
+         <view class="good-norms-num-txt">数量</view>
+         <view class="good-norms-num-list">
+            <van-stepper class="good-norms-num-num" value="{{ 1 }}" disable-input />
+         </view>
+    </view>
+ <!-- 保障 -->
+    <view class="good-norms-baozhang"> 
+        <view class="good-norms-baozhang-txt">保障</view>       
+        <view class="good-norms-baozhang-num">选购</view>
+        <view class="good-norms-baozhang-list">
+        <view class="good-norms-baozhang-nums">无忧服务</view>
+        <view class="good-norms-baozhang-nums">碎屏保</view>
+        <view class="good-norms-baozhang-nums">延长宝</view>
+    </view>
+     </view>
+
+  <!-- 推荐 -->
+     <view class="good-norms-tuijian">
+       <view class="good-norms-tuijian-txt">推荐</view>
+       <view class="good-norms-tuijian-list">
+        <view class="good-norms-tuijian-num">HUAWEI P40 5G 全网通 8GB+128GB</view>
+        <view class="good-norms-tuijian-num">HUAWEI P40 5G 全网通 8GB+128GB</view>
+       </view>
+     </view>
+
+
+   <!-- 用户评价 -->
+   
+   <view class="good-norms-discuss">
+      <view class="good-norms-discuss-txt">用户评价(2500+)</view>
+        <view class="good-norms-discuss-txtss">好评 ></view>
+      <view class="good-norms-discuss-txts">98%</view>
+      
+      <!-- 评论box -->
+      <view class="between">
+      <view class="good-norms-discuss-box">
+        <van-image round
+              class="good-norms-discuss-pic"
+              width="70rpx"
+              height="70rpx"
+              src="https://img.yzcdn.cn/vant/cat.jpeg"
+        />
+       <view class="good-norms-discuss-name">张乃赫张乃赫张乃赫</view>
+       <image class="good-norms-discuss-pingfen" src="../../images/pingfen.png"></image>
+       <view class="good-norms-discuss-pinglun">质量不错,第三部P40了,各方面都可以，喜欢喜欢喜欢支持华为</view>
+       <view class="good-norms-discuss-pingpic">
+       <image class="good-norms-discuss-pingpic-pic" src="../../images/schoolone.png"></image>
+       
+       </view>
+      </view>
+         
+
+            <view class="good-norms-discuss-box">
+        <van-image round
+              class="good-norms-discuss-pic"
+              width="70rpx"
+              height="70rpx"
+              src="https://img.yzcdn.cn/vant/cat.jpeg"
+        />
+       <view class="good-norms-discuss-name">张乃赫张乃赫张乃赫</view>
+       <image class="good-norms-discuss-pingfen" src="../../images/pingfen.png"></image>
+       <view class="good-norms-discuss-pinglun">质量不错,第三部P40了,各方面都可以，喜欢喜欢喜欢支持华为</view>
+       <view class="good-norms-discuss-pingpic">
+       <image class="good-norms-discuss-pingpic-pic" src="../../images/schoolone.png"></image>
+       
+       </view>
+      </view>
+
+            <view class="good-norms-discuss-box">
+        <van-image round
+              class="good-norms-discuss-pic"
+              width="70rpx"
+              height="70rpx"
+              src="https://img.yzcdn.cn/vant/cat.jpeg"
+        />
+       <view class="good-norms-discuss-name">张乃赫张乃赫张乃赫</view>
+       <image class="good-norms-discuss-pingfen" src="../../images/pingfen.png"></image>
+       <text class="good-norms-discuss-pinglun">质量不错,第三部P40了,各方面都可以，喜欢喜欢喜欢支持华为</text>
+       <view class="good-norms-discuss-pingpic">
+       <image class="good-norms-discuss-pingpic-pic" src="../../images/schoolone.png"></image>      
+       </view>
+      </view>
+      </view>
+   
+      <view class="good-norms-all-pinglun">查看全部评论</view>
+   </view>
+   </view>
+
+
+  
+
+   <view class="good-bottom-index">
+     <image class="good-bottom-index-home" src="../../images/home-two.png"></image>
+     <view class="good-bottom-index-txt">首页</view>
+     <view class="good-bottom-index-buy" bindtap="onBuy">立即购买</view>
+   </view>
+
+
+
+
+
+
+
+</view>
+
+
